@@ -1,0 +1,12 @@
+[
+  {"movieTitle": "Star Wars Episode IV: A New Hope", "director": "George Lucas", "yearOfProduction": 1977, "starring": "Harrison Ford"},
+  {"movieTitle": "Plan 9 from Outer Space", "director": "Edward D. Wood Jr.", "yearOfProduction": 1959, "starring": "Bela Lugosi"}, 
+  {"movieTitle": "Dirty Harry", "director": "Don Siegel", "yearOfProduction": 1971, "starring": "Clint Eastwood"}, 
+  {"movieTitle": "The Good, The Bad and The Ugly", "director": "Sergio Leone", "yearOfProduction": 1966, "starring": "Clint Eastwood"}, 
+  {"movieTitle": "The Godfather", "director": "Francis Ford Coppola", "yearOfProduction": 1972, "starring": "Marlon Brando"},
+  {"movieTitle": "Pulp Fiction", "director": "Quentin Tarantino", "yearOfProduction": 1994, "starring": "Samuel L. Jackson"}, 
+  {"movieTitle": "Alien", "director": "Ridley Scott", "yearOfProduction": 1979, "starring": "Sigourney Weaver"}, 
+  {"movieTitle": "Casablanca", "director": "Michael Curtiz", "yearOfProduction": 1942, "starring": "Humphrey Bogart"}, 
+  {"movieTitle": "12 Angry Men", "director": "Sidney Lumet", "yearOfProduction": 1957, "starring": "Henry Fonda"}, 
+  {"movieTitle": "Jaws", "director": "Steven Spielberg", "yearOfProduction": 1975, "starring": "Roy Scheider"}
+]

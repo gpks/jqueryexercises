@@ -1,0 +1,42 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script src="./jquery-2.0.0.js"> </script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<script> 
+  $( document ).ready(function() {
+   $('button').on('click', function(){
+         
+                $.ajax ({ url: '1.json', dataType: 'json'})
+                .done (function(data) {console.log('success'); 
+                  var elem1= $('.film');
+                    for (var i=0; i<data.length; i++) {
+                      for ( var key in data[i]) {
+                        elem1.append(key+ ' : ' + data[i][key]+ '<br>')
+                      }
+                      elem1.append('<br>')
+                    }
+
+
+                  ;})
+                .fail(function(){console.log('error');});
+});
+   })
+
+
+
+</script>
+
+<body>
+ <button id="butt"> klik </button> 
+
+<div class = "film">
+
+</div>
+
+
+
+</body>

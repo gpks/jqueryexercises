@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  </head>
+  <body>
+    <script type="text/javascript">
+      $(document).ready(function() {
+
+	var request = $.ajax({
+	  url: "http://pl.wikipedia.org/w/api.php",
+	  type: "GET",
+	  dataType: "json",
+	  data: { action: "opensearch",
+                  format: "json",
+                  search: "poland",
+                  limit: 10 }
+	});
+	request.done(function(msg) {
+          $("#d").html(msg);
+	});
+        });
+
+    </script>
+	<div id="d"></div>
+  </body>
+</html>
