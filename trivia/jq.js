@@ -18,19 +18,16 @@ $( document ).ready(function() {
             else
             {
                 alert("czas minął");
-                nextq(data);
                 clearInterval(timecount);
+                nextq(data);
+                
 
             }
         } , 1000)
-
     }
 
-
-
-
     function nextq(data) { 
-      if (data.length>15){
+      if (data.length>10){
         var rand = getRandomInt(0,(data.length)-1);
         var elem1= $('#quest');
 
@@ -48,38 +45,26 @@ $( document ).ready(function() {
             elem2.append('<button id=ans'+i+'>'+answ[i].ans+'</button>')
             $('#ans'+i).data('val',answ[i].value)                      
 
-
             $('#ans'+i).on('click', function(){
                 if ($(this).data('val') == true) {
                     points++;
                     alert('OK!! Punkty '+ points);
-
-
-
                 }
                 else
                 {
                     alert('Błąd!!');}
                     clearInterval(timecount)
                     nextq(data);
-
-
-
-
                 });
         }   
 
     }
     else {
-
         $('#main').children().remove();
         alert("Koniec gry!! Zdobyłeś "+points+' punktów.' );
         window.location.reload();
-
     }
 };
-
-
 
 
 
